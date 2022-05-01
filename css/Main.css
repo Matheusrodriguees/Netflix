@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --var1:#E50914;
+    --var2: #141414;
+}
+
+/*elementos base*/
+
+body{
+    background-color: var(--var2);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+header .conteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--var1);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme-principal*/
+.filme-principal{
+    font-size: 14px;
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)), url('/img/doutor-estranho.jpg');
+
+    height: 400px;
+    background-size: cover;
+    margin-left: 6px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}    
+.filme-principal .descricao{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.titulo{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.botao{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #fff;
+
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 10px;
+
+    cursor: pointer;
+    transition: .3 ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.conteiner{
+    margin-left: 20px;
+}
+.filme-principal .conteiner{
+    width: 60%;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 8px;
+    margin-left: 6px;
+
+}
+
+.owl-carousel{
+    width: 10px;
+}
